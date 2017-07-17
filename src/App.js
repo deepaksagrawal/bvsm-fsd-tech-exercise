@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ProductList from './ProductList';
 
 class App extends Component {
 
@@ -14,15 +15,15 @@ class App extends Component {
             .then(result=> {
                 this.setState({items:result.json()});
             });
-              alert(this.state.items);
     }
     
     render() {        
         return(
             <div>
-                <div>Items:</div>
-                { this.state.items }          
-            </div>  
+                <div>Product List:</div>
+                <ProductList products={this.state.items}/>
+                <div>Shopping Bag:</div>
+            </div>
         );
     } 
 }

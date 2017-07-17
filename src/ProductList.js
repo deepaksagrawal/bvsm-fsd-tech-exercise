@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Product from './Product';
+import Product from './Models/Product';
 import AddProduct from './Controllers/AddProduct';
 
 class ProductList extends React.Component {
@@ -24,4 +24,4 @@ class ProductList extends React.Component {
   } 
 }
 
-export default ProductGrid;
+export default ProductList;
