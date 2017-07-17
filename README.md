@@ -1,0 +1,1 @@
+# bvsm-fsd-tech-exercise
